@@ -16,7 +16,9 @@
     --fs-h2: 2.5rem;
     --fs-h3: 1.5rem;
     --fs-body: 1rem;
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    --bs: 0.35em 0.35em 1.1em rgba(0,0,0,.35), 
+          0.25em 0.25em 0.75em rgba(0,0,0,.25), 
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
@@ -377,16 +379,20 @@ header {
 }
 
 .gallery__items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.gallery__items {
     margin-top: 4em;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 1em;
+    row-gap: 1em;
+    
 }
 
 .gallery__img {
     position: relative;
     z-index: 2;
+    border: 2px solid #000000;
+    box-shadow: var(--bs);
 }
 
 /* Footer */
