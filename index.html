@@ -46,7 +46,7 @@
                 Interior Design Student
             </p>
             <img src="img/arii-jones-intro.jpg"
-                 alt="A picture of Arii Jones and her bunny" class="intro__img"/>
+                 alt="A picture of Arii Jones and her bunny" class="intro__img" />
         </section>
 
         <!-- Filler Image -->
@@ -57,17 +57,17 @@
             <h2 class="section__title section__title--services">What I Do</h2>
             <div class="services">
                 <div class="service">
-                    <h3>Interior Design</h3>
+                    <h3><u>Interior Design</u></h3>
                     <p>
                         One of my passions is making the most of a space and incorporating
                         as many natural elements as I can while maintaining a sophisticated atmosphere.
-                        Reusability is one of the main focuses of my work as I attempt to bring the natural, 
+                        Reusability is one of the main focuses of my work as I attempt to bring the natural,
                         raw beauty of the outdoors into the comforts of a home. Also, throw pillows!
                     </p>
                 </div> <!-- / service -->
 
                 <div class="service">
-                    <h3>Photography</h3>
+                    <h3><u>Photography</u></h3>
                     <p>
                         From nature to industrial architecture, I enjoy finding the beauty in
                         every space. By capturing these moments in a photograph, I am able to
@@ -89,8 +89,8 @@
             <p class="section__subtitle section__subtitle--about">Interior Design Student</p>
             <div class="about-me__body">
                 <p>
-                    Although it has been several years since I have attended school of any kind, 
-                    I have always had a passion for art and design, both in my academic and personal life. In terms of my design style, 
+                    Although it has been several years since I have attended school of any kind,
+                    I have always had a passion for art and design, both in my academic and personal life. In terms of my design style,
                     I have been told I have a whimsical personality; however, I like to create sophisticated designs with a focus on natural elements.
                     In other terms, I want to bring the beauty of nature indoors. With that being said, I personally
                     love the challenge of taking a single design element such as a throw pillow (you can never have
@@ -105,7 +105,6 @@
             <img src="img/arii-jones-about-me.jpg"
                  alt="An image of Arii Jones" class="about-me__img" />
         </section>
-
 
         <!-- Footer -->
         <footer class="footer">
@@ -141,7 +140,20 @@
             </p>
         </footer>
 
+        <!-- No Right Click Script -->
+        <script type="text/JavaScript">
+            var message = "NoRightClicking";
+            function defeatIE() { if (document.all) { (message); return false; } }
+            function defeatNS(e) {
+                if
+                    (document.layers || (document.getElementById && !document.all)) {
+                    if (e.which == 2 || e.which == 3) { (message); return false; }
+                }
+            }
+            if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = defeatNS; }
+            else { document.onmouseup = defeatNS; document.oncontextmenu = defeatIE; }
+            document.oncontextmenu = new Function("return false")
+        </script>
         <script src="js/index.js"></script>
-
     </body>
 </html>

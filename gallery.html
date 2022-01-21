@@ -42,10 +42,24 @@
         <h2 class="section__title section__title--gallery">My Gallery</h2>
         <div class="gallery__items">
             <!-- Individual Gallery Images -->
+            <img src="img/portfolio_00.jpg" alt="" class="gallery__img" />
             <img src="img/portfolio_01.jpg" alt="" class="gallery__img" />
             <img src="img/portfolio_02.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_03.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_04.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_05.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_06.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_07.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_08.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_09.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_010.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_011.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_012.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_013.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_014.jpg" alt="" class="gallery__img" />
+            <img src="img/portfolio_015.jpg" alt="" class="gallery__img" />
         </div>
-    </section> 
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -81,6 +95,20 @@
         </p>
     </footer>
 
+    <!-- No Right Click Script -->
+    <script type="text/JavaScript">
+        var message = "NoRightClicking";
+        function defeatIE() { if (document.all) { (message); return false; } }
+        function defeatNS(e) {
+            if
+                (document.layers || (document.getElementById && !document.all)) {
+                if (e.which == 2 || e.which == 3) { (message); return false; }
+            }
+        }
+        if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = defeatNS; }
+        else { document.onmouseup = defeatNS; document.oncontextmenu = defeatIE; }
+        document.oncontextmenu = new Function("return false")
+    </script>
     <script src="js/index.js"></script>
 
 </body>
