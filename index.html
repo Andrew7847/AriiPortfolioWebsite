@@ -154,6 +154,39 @@
             else { document.onmouseup = defeatNS; document.oncontextmenu = defeatIE; }
             document.oncontextmenu = new Function("return false")
         </script>
+
+        <div class="hidden">
+            <script type="text/javascript">
+		    //<![CDATA[
+                var images = new Array()
+                function preload() {
+                    for (i = 0; i < preload.arguments.length; i++) {
+                       images[i] = new Image()
+                       images[i].src = preload.arguments[i]
+                    }
+                }
+                preload(
+                    "https://bombshellspaces.com/img/portfolio_00.jpg",
+                    "https://bombshellspaces.com/img/portfolio_01.jpg",
+                    "https://bombshellspaces.com/img/portfolio_02.jpg",
+                    "https://bombshellspaces.com/img/portfolio_03.jpg",
+                    "https://bombshellspaces.com/img/portfolio_04.jpg",
+                    "https://bombshellspaces.com/img/portfolio_05.jpg",
+                    "https://bombshellspaces.com/img/portfolio_06.jpg",
+                    "https://bombshellspaces.com/img/portfolio_07.jpg",
+                    "https://bombshellspaces.com/img/portfolio_08.jpg",
+                    "https://bombshellspaces.com/img/portfolio_09.jpg",
+                    "https://bombshellspaces.com/img/portfolio_010.jpg",
+                    "https://bombshellspaces.com/img/portfolio_011.jpg",
+                    "https://bombshellspaces.com/img/portfolio_012.jpg",
+                    "https://bombshellspaces.com/img/portfolio_013.jpg",
+                    "https://bombshellspaces.com/img/portfolio_014.jpg",
+                    "https://bombshellspaces.com/img/portfolio_015.jpg"
+                    )
+                //]]>
+            </script>
+
+        </div>
         <script src="js/index.js"></script>
     </body>
 </html>
